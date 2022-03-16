@@ -25,6 +25,7 @@ public class PostService {
 
     // 글상세보기, 글수정페이지
     public Post 글상세보기(Integer id) {
+        
         Optional<Post> postOp = postRepository.findById(id);
 
         if (postOp.isPresent()) {
